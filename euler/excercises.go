@@ -5,5 +5,7 @@ func Ex001 () int {
 }
 
 func Ex002 () int {
-	return SumInts(Fib(4e6))
+	return SumInts(FilterInts(Fib(4e6), func (i int) bool {
+		return i % 2 == 0
+	}))
 }
