@@ -9,3 +9,7 @@ func Ex002 () int {
 		return i % 2 == 0
 	}))
 }
+
+func Ex003 () int {
+	return LargestPrime(600851475143)
+}
