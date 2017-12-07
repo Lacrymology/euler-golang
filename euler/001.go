@@ -1,16 +1,13 @@
 package euler
 
-func MultiplesOf3Or5(limit int) <-chan int {
-	ret := make(chan int)
+func MultiplesOf3Or5(limit int) []int {
+	ret := make([]int, 0)
 
-	go func () {
-		for i := 1 ; i < limit ; i++ {
-			if i % 3 == 0 || i % 5 == 0 {
-				ret <- i
-			}
+	for i := 1 ; i < limit ; i++ {
+		if i % 3 == 0 || i % 5 == 0 {
+			ret = append(ret, i)
 		}
-		close(ret)
-	}()
+	}
 
 	return ret
 }

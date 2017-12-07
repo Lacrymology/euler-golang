@@ -1,12 +1,10 @@
 package euler
 
-func SumInts(source <-chan int) int {
+func SumInts(source []int) int {
 	total := 0
-	for i := range(source) {
+	for _, i := range(source) {
 		total += i
 	}
 	return total
 }
 
-//func FilterInts(source []int, f func (int) bool) []string {
-//}
