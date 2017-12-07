@@ -13,3 +13,7 @@ func Ex002 () int {
 func Ex003 () int {
 	return LargestPrime(600851475143)
 }
+
+func Ex004 () int {
+	return LargestPalindrome(3)
+}
