@@ -1,10 +1,9 @@
 package euler
 
-import (
-	"fmt"
-)
+func Ex001 () int {
+	return SumInts(MultiplesOf3Or5(1000))
+}
 
-func Ex001 () {
-	muls := MultiplesOf3Or5(1000)
-	fmt.Println(SumInts(muls))
+func Ex002 () int {
+	return SumInts(Fib(4e6))
 }
