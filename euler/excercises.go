@@ -21,3 +21,7 @@ func Ex004 () int {
 func Ex005 () int {
 	return SmallestMultiple(20)
 }
+
+func Ex006 () int {
+	return SquareDiff(100)
+}
