@@ -17,3 +17,7 @@ func Ex003 () int {
 func Ex004 () int {
 	return LargestPalindrome(3)
 }
+
+func Ex005 () int {
+	return SmallestMultiple(20)
+}
