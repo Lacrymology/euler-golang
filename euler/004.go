@@ -1,11 +1,11 @@
 package euler
 
 import (
-	"math"
 	"fmt"
+	"math"
 )
 
-func LargestPalindrome (figures int) int {
+func LargestPalindrome(figures int) int {
 	a := int(math.Pow10(figures)) - 1
 	b := a
 

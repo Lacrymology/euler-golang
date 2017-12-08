@@ -14,13 +14,13 @@ func PrimesAndComposites(limit int) (primes map[int]bool, composites map[int]boo
 		primes[p] = true
 
 		// all multiples of p are not primes
-		for i := 2 ; i * p < limit ; i++ {
+		for i := 2; i*p < limit; i++ {
 			composites[i*p] = true
 		}
 
 		// find the next number not yet marked as a composite
 		p++
-		for present := composites[p] ; present && p < limit ; present = composites[p] {
+		for present := composites[p]; present && p < limit; present = composites[p] {
 			p++
 		}
 	}
@@ -45,7 +45,7 @@ func NPrimes(n int) []int {
 	attempt := 3 // start from 3
 
 	for len(primes) < n {
-		if AllInt(func (p int) bool { return attempt % p != 0}, primes) {
+		if AllInt(func(p int) bool { return attempt%p != 0 }, primes) {
 			primes = append(primes, attempt)
 		}
 		attempt += 2

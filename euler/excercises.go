@@ -1,31 +1,31 @@
 package euler
 
-func Ex001 () int {
+func Ex001() int {
 	return SumInts(MultiplesOf3Or5(1000))
 }
 
-func Ex002 () int {
-	return SumInts(FilterInts(Fib(4e6), func (i int) bool {
-		return i % 2 == 0
+func Ex002() int {
+	return SumInts(FilterInts(Fib(4e6), func(i int) bool {
+		return i%2 == 0
 	}))
 }
 
-func Ex003 () int {
+func Ex003() int {
 	return LargestPrime(600851475143)
 }
 
-func Ex004 () int {
+func Ex004() int {
 	return LargestPalindrome(3)
 }
 
-func Ex005 () int {
+func Ex005() int {
 	return SmallestMultiple(20)
 }
 
-func Ex006 () int {
+func Ex006() int {
 	return SquareDiff(100)
 }
 
-func Ex007 () int {
+func Ex007() int {
 	return NthPrime(10001)
 }

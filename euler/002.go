@@ -7,7 +7,7 @@ func Fib(limit int) []int {
 
 	for j < limit {
 		ret = append(ret, j)
-		i, j = j, i + j
+		i, j = j, i+j
 	}
 
 	return ret

@@ -9,11 +9,11 @@ func LargestPrime(n int) int {
 	primes := PrimesUnderN(max)
 
 	for _, p := range primes {
-		if n % p != 0 {
+		if n%p != 0 {
 			continue
 		}
 
-		for n % p == 0 && n > 1 {
+		for n%p == 0 && n > 1 {
 			n = n / p
 		}
 		if n <= p {

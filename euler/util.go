@@ -1,8 +1,8 @@
 package euler
 
-func FilterInts(source []int, f func (int) bool) []int {
+func FilterInts(source []int, f func(int) bool) []int {
 	dest := make([]int, 0)
-	for _, v := range(source) {
+	for _, v := range source {
 		if f(v) {
 			dest = append(dest, v)
 		}
@@ -11,8 +11,8 @@ func FilterInts(source []int, f func (int) bool) []int {
 }
 
 func IsPalindrome(input string) bool {
-	for i := 0; i < len(input) / 2 ; i++ {
-		if input[i] != input[len(input) - i - 1] {
+	for i := 0; i < len(input)/2; i++ {
+		if input[i] != input[len(input)-i-1] {
 			return false
 		}
 	}
