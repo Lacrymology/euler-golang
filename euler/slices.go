@@ -1,3 +1,5 @@
+package euler
+
 func ReduceInt(r func (int, int) int, vals []int, initial int) int {
 	for _, v := range vals {
 		initial = r(initial, v)
