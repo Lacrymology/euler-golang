@@ -6,7 +6,7 @@ import (
 
 func LargestPrime(n int) int {
 	max := int(math.Sqrt(float64(n))) + 1
-	primes := Primes(max)
+	primes := PrimesUnderN(max)
 
 	for _, p := range primes {
 		if n % p != 0 {
