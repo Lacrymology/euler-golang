@@ -50,3 +50,20 @@ func IsPalindrome(input string) bool {
 	}
 	return true
 }
+
+func GCD(a, b int) int {
+	for a != b {
+		switch {
+		case a > b:
+			a -= b
+		case b > a:
+			b -= a
+		}
+	}
+	return a
+}
+
+func LCM(a, b int) int {
+	return a * b / GCD(a, b)
+}
+
