@@ -25,3 +25,7 @@ func Ex005 () int {
 func Ex006 () int {
 	return SquareDiff(100)
 }
+
+func Ex007 () int {
+	return NthPrime(10001)
+}
